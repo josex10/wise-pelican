@@ -1,0 +1,4 @@
+1. Open the command prompt an change the location to the app folder
+2. Run "npm install" command to install all dependencies
+3. Run "ng serve" command to start the app
+4. Run "ng test" command to start the test mode

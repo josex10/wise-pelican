@@ -1,0 +1,138 @@
+.main-container{
+    width: 100vw;
+    height: 90vh;
+    background-image: url("../../../assets/images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 10vh;
+}
+
+.main-container .row{
+    margin: 0;
+    padding-left: 3vw;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    animation-name: mainMessage;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.main-container h1{
+    // font-family: 'Shadows Into Light', cursive;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 5vh;
+    text-shadow: 2px 2px 4px #000000;
+    line-height: 1.6;
+}
+
+@keyframes mainMessage {
+    0%   { left:auto; top:100%;}
+    100%   {left:auto; top:50%;}
+}
+
+.pos1{
+    right: 10%;
+    left: 10%;
+    width: 20px;
+    height: 20px;
+}
+
+.pos2{
+    right: 20%;
+    left: 80%;
+    width: 30px;
+    height: 30px;
+}
+
+.pos3{
+    right: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.pos4{
+    right: 40%;
+    left: 25%;
+    width: 10px;
+    height: 10px;
+}
+
+.pos5{
+    right: 70%;
+    left: 30%;
+    top: 40%;
+    width: 15px;
+    height: 15px;
+}
+
+.pos6{
+    right: 20%;
+    left: 60%;
+    top: 25%;
+    width: 20px;
+    height: 20px;
+}
+
+.star-1{
+    background-image: url("../../../assets/images/star.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-animation: start 5s ease-out infinite normal;
+    animation: start 5s ease-out infinite normal;
+}
+ 
+@keyframes start {
+    0% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    50% {
+      -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      transform: scale(1.4);
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+}
+
+
+.cls-btn-shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  

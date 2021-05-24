@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Plan {{product.name}}</h2>
+<mat-divider></mat-divider>
+<mat-dialog-content>
+
+  <div>
+    <ul>
+      <li *ngFor="let feature of product.features">{{feature}}</li>
+    </ul>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div>
+    <ul class="price-list">
+      <li *ngFor="let plan of product.plans"> <b>{{plan.priceCents / 100}}</b> {{plan.currency}} / {{plan.paymentInterval}}</li>
+    </ul>
+
+  </div>
+
+  
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+  <button mat-raised-button color="primary" mat-dialog-close>
+    Close
+  </button>
+</mat-dialog-actions>
+

@@ -1,0 +1,45 @@
+.main-container{
+    width: 100vw;
+    height: 90vh;
+    background-image: url("../../../assets/images/background-simple.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 10vh;
+}
+
+.cards-container{
+    margin-left: 2vh;
+}
+
+.product-card{
+    margin-top: 3vh;
+    margin-right: 3vh;
+    height: 100%;
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.product-header{
+    margin: 2vh;
+}
+
+.mat-card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+  
+.mat-card-content {
+    display: flex;
+    flex: 1;
+}
+
+.mat-card-footer{
+    background-image: url("../../../assets/images/SMPattern.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3vh;
+}

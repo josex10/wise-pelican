@@ -1,0 +1,21 @@
+<div class="main-container">
+    <!-- 
+    <p>subscription-page works!</p>
+    <button (click)="openDialog()">Hello</button>
+    -->
+
+    <div *ngIf="!loader" class="cards-container">
+        <mat-grid-list [cols]="breakpoint" rowHeight="20rem" (window:resize)="onResize($event)">
+            <mat-grid-tile *ngFor="let product of groupOfProducts">
+                <app-subscription-card [productModel]="product"></app-subscription-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <div *ngIf="loader">
+        <app-loader></app-loader>
+    </div>
+    
+</div>
+
+
+

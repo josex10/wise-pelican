@@ -1,0 +1,45 @@
+.main-container{
+    color: white;
+    padding-top: 1vh;
+}
+
+.cards-container{
+    margin-left: 2vh;
+}
+
+.product-card{
+    margin-top: 1vh;
+    margin-right: 1vh;
+    height: 20rem;
+    width: 15rem;
+}
+
+.product-card:hover{
+    box-shadow: 10px 10px 10px #0090CC;
+}
+
+.product-header{
+    height: 5rem;
+}
+
+.product-content{
+    height: 9rem;
+}
+
+.product-footer{
+    height: 6rem;
+}
+
+.product-footer button{
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+}
+
+
+.mat-card-footer{
+    background-image: url("../../../assets/images/SMPattern.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

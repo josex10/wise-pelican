@@ -1,0 +1,11 @@
+<div class="nav-bar main-container">
+    <mat-toolbar color="white">
+        <mat-toolbar-row>
+          <img src="../../../assets/images/Wise-Pelican.png" class="wise-pelican-nav-bar-logo" alt="">
+          <span class="menu-spacer"></span>
+          <div *ngFor="let button of groupOfLinkButtons" class="link-button">
+              <app-link-button  [linkButtonModel]="button"></app-link-button>
+          </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</div>
